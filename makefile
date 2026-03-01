@@ -18,7 +18,7 @@ LDFLAGS = -L/usr/local/lib
 LIBS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
 # Source files
-SRC = main.c ray.c ray.h
+SRC = main.c ray.c ray.h defs.h
 
 # Default rule: This runs when you just type 'make'
 all: $(TARGET)

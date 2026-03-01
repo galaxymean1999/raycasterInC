@@ -1,10 +1,15 @@
 #include <raylib.h>
 
-typedef struct Ray {
+struct CastableRay {
     Vector2 start;
     Vector2 end;
+    
     float length;
     float angle;
-} Ray;
 
-Ray castRay(Vector2 start, float angle);
+    bool hit;
+};
+
+typedef struct CastableRay MyRay;
+
+MyRay castRay(Vector2 start, float angle);
